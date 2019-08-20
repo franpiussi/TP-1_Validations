@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script-form.js"></script>
+    <link rel="stylesheet" href="styles-form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <h2>FORMULARIO</h2>
+        <div>
+            Nombre*<br>
+            <input type="text" placeholder="Ingrese nombre" id="name" name="name"><br>
+            <label for="name" id="label-name-characters" >Numero excedido de caracteres</label>
+            <label for="name" id="label-name-special" >No se pueden enviar caracteres especiales</label>
+            <label for="name" id="label-name-required"> Campo obligatorio.</label>
+        </div>
+        
+        <div>
+            Apellido*<br>
+            <input type="text" placeholder="Ingrese apellido" id="lastname" name="lastname">
+            <label for="lastname" id="label-lastname-characters" >Numero excedido de caracteres</label>
+            <label for="lastname" id="label-lastname-special" >No se pueden enviar caracteres especiales</label>
+            <label for="lastname" id="label-lastname-required"> Campo obligatorio.</label>
+        </div>
+        
+        <div>
+            Edad<br>
+            <input type="text" placeholder="Ingrese edad" id="age" name="age"><br>
+            <label for="age" id="label-age-numbers" >Solo se aceptan numeros</label>
+        </div>
+        
+        <div>
+            Email*<br>
+            <input type="text" placeholder="Ingrese email" id="email"><br>
+            <label for="email" id="label-email-required">Campo obligatorio</label>
+            <label for="email" id="label-email-domain">Debe tener dominio (Dominios permitidos: google,outlook,icloud)</label>
+        </div>
+
+        <div>
+            Contraseña*<br>
+            <input type="password" placeholder="Ingrese contraseña" id="password"><br>
+            <label for="password" id="label-password-required">Campo obligatorio</label>
+            <label for="pasword" id="label-password-length" >Debe ser entre 9 y 20 caracteres de longitud</label>
+            <label for="password" id="label-password-uppercase-number">Debe contener al menos una letra mayuscula, una minuscula y al menos un numero</label>
+        </div>
+        <input type="button" onclick="validateForm()" value="Enviar">
+        
+    </form>
+</body>
+</html>

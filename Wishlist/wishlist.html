@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script-wishlist.js"></script>
+    <link rel="stylesheet" href="styles-wishlist.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wishlist</title>
+</head>
+<body>
+    <h1>WISHLIST</h1>
+    <form>
+        <h2>Lista de Productos</h2>
+        <ul>
+            <li id="product-1" title="Producto 1">Producto 1 <input type="button" value="Agregar a la lista de deseados" onclick="addItem('product-1')"/></li> 
+            <li id="product-2" title="Producto 2">Producto 2 <input type="button" value="Agregar a la lista de deseados" onclick="addItem('product-2')"/></li>
+            <li id="product-3" title="Producto 3">Producto 3 <input type="button" value="Agregar a la lista de deseados" onclick="addItem('product-3')"/></li>
+        </ul>
+        
+    </form>
+    <form>
+        <h2>Lista de Deseados</h2>
+        <div>
+            <ul id="myUL">
+                
+            </ul>
+        </div>
+        <label id="no-items">No hay productos agregados</label>
+    </form>
+</body>
+</html>
